@@ -63,12 +63,9 @@ $ ./spolybar.sh
 #### Material
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/material.png)
 
-<<<<<<< HEAD
-#### Cuts
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/cuts.png)
+#### Minimal
+![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/minimal.png)
 
-=======
->>>>>>> e33e5ec57969741469c40b8d317eb63b77e0eb85
 #### Wave
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/wave.png)
 
