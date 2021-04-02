@@ -1,5 +1,5 @@
 /**
- * Rofin
+ * Berofi
  * User: Birkhoff
  */
 
@@ -19,7 +19,8 @@ configuration {
 window {
     background-color: @background;
     border:           1;
-    padding:          70;
+    border-color:     @selected-normal-background;
+    padding:          35;
     width: 	      50%;
     height: 	      50%;
 }
