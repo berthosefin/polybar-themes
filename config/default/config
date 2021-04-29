@@ -18,22 +18,15 @@
 
 [colors]
 background = ${xrdb:color0:#222}
-;background = #222
-background-alt = #444
 foreground = ${xrdb:color7:#222}
-;foreground = #dfdfdf
-foreground-alt = #555
 primary = ${xrdb:color2:#222}
-;primary = #ffb52a
 secondary = ${xrdb:color1:#222}
-;secondary = #e60053
 alert = ${xrdb:color6:#222}
-;alert = #bd2c40
 
 [bar/default]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 24
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 ;radius = 6.0
@@ -54,13 +47,13 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = iosevka nerd font:pixelsize=8;0
-font-1 = fontawesome:pixelsize=8;1
-font-2 = material:pixelsize=8;1
+font-0 = iosevka nerd font:pixelsize=8;2
+font-1 = fontawesome:pixelsize=8;2
+font-2 = material:pixelsize=8;2
 
 modules-left = i3
 modules-center = xwindow
-modules-right = mpd alsa date wlan eth memory cpu filesystem battery
+modules-right = mpd alsa battery wlan eth date
 
 tray-position = none
 tray-padding = 2
@@ -112,28 +105,31 @@ wrapping-scroll = false
 ;pin-workspaces = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
+label-mode-foreground = ${colors.primary}
+label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = #000000ff
-label-focused-underline= ${colors.foreground}
+label-focused-background = ${colors.background}
+label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
+label-unfocused-background = ${colors.background}
+label-unfocused-underline= ${colors.background}
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
+label-visible-background = ${colors.background}
+label-visible-underline= ${colors.background}
+label-visible-padding = 2
 
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
-label-urgent-background = ${colors.alert}
+label-urgent-background = ${colors.background}
+label-urgent-underline= ${colors.alert}
 label-urgent-padding = 2
 
 ; Separator in between workspaces
@@ -169,7 +165,7 @@ label-volume =  %percentage%%
 ;label-volume-foreground = ${root.foreground}
 
 label-muted =  muted
-label-muted-foreground = ${colors.foreground-alt}
+label-muted-foreground = ${colors.alternate}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -193,11 +189,11 @@ type = internal/alsa
 
 format-volume = <label-volume>
 label-volume =  %percentage%%
-;label-volume-foreground = ${root.foreground}
+label-volume-foreground = ${colors.foreground}
 
 format-muted-prefix = 
-;format-muted-foreground = ${colors.foreground-alt}
-label-muted = muted
+format-muted-foreground = ${colors.alert}
+label-muted = " muted"
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -214,7 +210,7 @@ bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+bar-volume-empty-foreground = ${colors.foreground}
 
 [module/wlan]
 type = internal/network
@@ -310,7 +306,7 @@ time =  %H:%M
 time-alt =
 
 format-prefix = 
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix-foreground = ${colors.foreground}
 ;format-underline = #0a6cf5
 
 label = %date% %time%
@@ -352,6 +348,7 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.alert}
 ;format-full-underline = ${self.format-charging-underline}
+label-full-foreground = ${colors.alert}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 

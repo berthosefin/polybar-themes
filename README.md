@@ -42,26 +42,14 @@ $ ./spolybar.sh
 #### Default
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/default.png)
 
-#### Hack
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/hack.png)
-
-#### Cuts
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/cuts.png)
-
 #### Forest
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/forest.png)
 
 #### Fin
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/fin.png)
 
-#### Topy
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/topy.png)
-
 #### Docky
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/docky.png)
-
-#### Material
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/material.png)
 
 #### Wave
 ![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/wave.png)
