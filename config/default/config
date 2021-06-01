@@ -20,8 +20,8 @@
 background = ${xrdb:color0:#222}
 foreground = ${xrdb:color7:#222}
 primary = ${xrdb:color2:#222}
-secondary = ${xrdb:color1:#222}
-alert = ${xrdb:color6:#222}
+secondary = ${xrdb:color5:#222}
+alert = ${xrdb:color1:#222}
 
 [bar/default]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -47,7 +47,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = iosevka nerd font:pixelsize=8;2
+font-0 = iosevka custom:pixelsize=8;2
 font-1 = fontawesome:pixelsize=8;2
 font-2 = material:pixelsize=8;2
 
