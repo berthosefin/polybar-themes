@@ -53,7 +53,7 @@ font-2 = material:pixelsize=8;2
 
 modules-left = i3
 modules-center = xwindow
-modules-right = mpd alsa battery wlan eth date
+modules-right = mpd alsa battery backlight-acpi wlan eth date
 
 tray-position = none
 tray-padding = 2
@@ -221,7 +221,6 @@ format-connected = <ramp-signal> <label-connected>
 ;format-connected-underline = #9f78e1
 label-connected = %essid%
 
-format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -239,7 +238,7 @@ ramp-signal-7 = 
 
 [module/eth]
 type = internal/network
-interface = enp3s0
+interface = eno1
 interval = 3.0
 
 ;format-connected-underline = #55aa55
@@ -247,7 +246,6 @@ format-connected-prefix = " "
 ;format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
-format-disconnected =
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -314,8 +312,8 @@ label = %date% %time%
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
-label = 
+format = <label>
+label =  %percentage%%
 
 bar-width = 10
 bar-indicator = |
@@ -326,7 +324,7 @@ bar-fill-font = 2
 bar-fill-foreground = #9f78e1
 bar-empty = ─
 bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
+bar-empty-foreground = ${colors.foreground}
 
 [module/backlight-acpi]
 inherit = module/xbacklight
@@ -335,7 +333,7 @@ card = intel_backlight
 
 [module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = ACAD
 full-at = 99
 

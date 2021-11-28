@@ -1,26 +1,21 @@
-/**
- * Rofin
+/*******************************************************************************
+ * ROFI Color theme
  * User: Birkhoff
- */
+ *******************************************************************************/
 
-configuration {
-    display-drun:                   "Apps";
-    display-window:                 "Window";
-}
-
-* {
-    separatorcolor:              @selected-normal-background;
-    fullscreen:			 false;
-    display-drun:                "Apps";
-    font: 			 "Iosevka 10";
-}
 @import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
 
+*{
+	fullscreen:		 false;
+    font: 			 "Iosevka 10";
+    separatorcolor:              @selected-normal-background;
+}
 window {
     background-color: @background;
-    border:           1;
+    border:           0;
+    border-color:     @selected-normal-background;
     padding:          70;
-    width: 	      50%;
+    width: 	          50%;
     height: 	      50%;
 }
 mainbox {
@@ -37,7 +32,7 @@ textbox {
 }
 listview {
     fixed-height: 0;
-    border:       1px 0px 0px ;
+    border:       2px 0px 0px ;
     border-color: @separatorcolor;
     spacing:      2px ;
     scrollbar:    true;
@@ -46,6 +41,10 @@ listview {
 element {
     border:  0;
     padding: 1px ;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
 }
 element.normal.normal {
     background-color: @normal-background;
@@ -60,8 +59,8 @@ element.normal.active {
     text-color:       @active-foreground;
 }
 element.selected.normal {
-    background-color: @normal-background;
-    text-color:       @selected-normal-background;
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
 }
 element.selected.urgent {
     background-color: @selected-urgent-background;
@@ -110,9 +109,9 @@ entry {
     spacing:    0;
     text-color: @normal-foreground;
 }
-prompt, button{
+prompt {
     spacing:    0;
-    text-color: @selected-normal-background;
+    text-color: @normal-foreground;
 }
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
@@ -121,5 +120,5 @@ textbox-prompt-colon {
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em ;
-    text-color: @selected-normal-background;
+    text-color: @normal-foreground;
 }
