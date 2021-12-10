@@ -43,6 +43,11 @@ elif [[ "$1" == "wave" ]]; then
 	style="wave"
 	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
+	
+elif [[ "$1" == "nya" ]]; then
+	style="nya"
+	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
 
 else
 	cat <<- EOF
@@ -55,7 +60,7 @@ else
 	Available Themes :
 	. default	. blocks	. docky		
 	. fin		. forest	. grayblocks
-	. wave
+	. wave		. nya
 
 	EOF
 fi

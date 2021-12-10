@@ -12,9 +12,7 @@
 ### Fonts
 
 - Iosevka Nerd Font
-- Fantasque Sans Mono
-- Icomoon Feather
-- Material Icons
+- Feather 
 
 ### Installation
 
@@ -33,29 +31,7 @@ $ sh ~/.config/polybar/launch.sh
 
 ### Change style
 ```
+$ chmod +x spolybar.sh
 $ ./spolybar.sh
 ```
-> You can copy spolybar.sh to your $PATH to make it executable everywhere. (`sudo cp spolybar.sh /usr/local/bin/spolybar`)
-
-### Previews
-
-#### Default
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/default.png)
-
-#### Forest
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/forest.png)
-
-#### Fin
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/fin.png)
-
-#### Docky
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/docky.png)
-
-#### Wave
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/wave.png)
-
-#### Blocks
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/blocks.png)
-
-#### Grayblocks
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/master/previews/grayblocks.png)
+> You can copy spolybar.sh to your $PATH to make it executable everywhere. (`cp spolybar.sh ~/.local/bin/spolybar`)
