@@ -55,7 +55,7 @@ font-1 = iosevka nerd font:pixelsize=9;2
 
 modules-left = launcher term files browser settings i3 xwindow
 modules-center = 
-modules-right = mpd pulseaudio battery backlight-acpi wlan eth date powermenu
+modules-right = alsa battery backlight-acpi wlan date powermenu
 
 tray-position = none
 tray-padding = 2

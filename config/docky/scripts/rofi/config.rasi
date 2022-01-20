@@ -5,6 +5,10 @@
 
 @import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
 
+configuration {
+    display-drun:   "Apps";
+    display-window: "Windows";
+}
 *{
 	fullscreen:		 false;
     font: 			 "Iosevka 10";
@@ -59,8 +63,8 @@ element.normal.active {
     text-color:       @active-foreground;
 }
 element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
+    background-color: @normal-background;
+    text-color:       @selected-normal-background;
 }
 element.selected.urgent {
     background-color: @selected-urgent-background;
