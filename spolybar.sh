@@ -3,7 +3,7 @@
 # ----------------------------------------------
 # Descritpion : Polybar style changer
 # Autor : Berthose Fin (birkhoff)
-# Date : 2021-02-13
+# Date : 2022-01-26
 # ----------------------------------------------
 
 DIR="$HOME/.config/polybar"
@@ -12,6 +12,11 @@ STYLE=$(sed -n '4s/STYLE=//p' $DIR/launch.sh);
 if [[ "$1" == "default" ]]; then
 	style="default"
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "attached" ]]; then
+	style="attached"
+	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "blocks" ]]; then
@@ -39,13 +44,13 @@ elif [[ "$1" == "grayblocks" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
-elif [[ "$1" == "wave" ]]; then
-	style="wave"
-	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-	sh $DIR/launch.sh
-	
 elif [[ "$1" == "nya" ]]; then
 	style="nya"
+	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "wave" ]]; then
+	style="wave"
 	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
@@ -58,9 +63,15 @@ else
 	spolybar [THEME]
 		
 	Available Themes :
-	. default	. blocks	. docky		
-	. fin		. forest	. grayblocks
-	. wave		. nya
+    . default
+    . attached
+    . blocks
+    . docky
+    . fin
+    . forest
+    . nya
+    . grayblocks
+    . wave
 
 	EOF
 fi
