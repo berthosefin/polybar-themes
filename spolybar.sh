@@ -14,24 +14,19 @@ if [[ "$1" == "default" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
-elif [[ "$1" == "attached" ]]; then
-	style="attached"
-	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-	sh $DIR/launch.sh
-
 elif [[ "$1" == "blocks" ]]; then
 	style="blocks"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "bordered" ]]; then
+	style="bordered"
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "docky" ]]; then
 	style="docky"
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-	sh $DIR/launch.sh
-
-elif [[ "$1" == "fin" ]]; then
-	style="fin"
-	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "forest" ]]; then
@@ -44,14 +39,9 @@ elif [[ "$1" == "grayblocks" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
-elif [[ "$1" == "nya" ]]; then
-	style="nya"
-	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-	sh $DIR/launch.sh
-
-elif [[ "$1" == "wave" ]]; then
-	style="wave"
-	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+elif [[ "$1" == "windows" ]]; then
+	style="windows"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 else
@@ -64,14 +54,12 @@ else
 		
 	Available Themes :
     . default
-    . attached
+    . bordered
     . blocks
     . docky
-    . fin
     . forest
-    . nya
     . grayblocks
-    . wave
+    . windows
 
 	EOF
 fi

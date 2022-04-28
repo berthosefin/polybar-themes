@@ -5,31 +5,25 @@
 ### Previews
 
 #### Default
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/default.png)
-
-#### Attached
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/attached.png)
+![default](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/default.png)
 
 #### Blocks
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/blocks.png)
+![blocks](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/blocks.png)
+
+#### Bordered
+![bordered](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/bordered.png)
 
 #### Docky
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/docky.png)
-
-#### Fin
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/fin.png)
+![docky](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/docky.png)
 
 #### Forest
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/forest.png)
+![forest](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/forest.png)
 
 #### Grayblocks
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/grayblocks.png)
+![grayblocks](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/grayblocks.png)
 
-#### Nya
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/nya.png)
-
-#### Wave
-![alt text](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/wave.png)
+#### Windows
+![windows](https://raw.githubusercontent.com/berthosefin/polybar-themes/main/previews/grayblocks.png)
 
 ### Dependencies
 
